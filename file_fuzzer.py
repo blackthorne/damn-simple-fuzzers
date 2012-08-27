@@ -77,7 +77,7 @@ if __name__ == '__main__':
 		if(args.bufdatarandom):
 			ffile+=genrandom(args.bufmaxsize, forbiddenchars)
 		else:
-			ffile+=args.bufdata*args.bufmaxsize[0] #@TODO: bufdata can only be one char, fix
+			ffile+=args.bufdata*args.bufmaxsize #@TODO: bufdata can only be one char, fix
 		ffile+=templatedata[offset:]
 		targetfilename=dstfilename.split('.')[0]+'_%.5x.' % offset+dstfilename.split('.')[1]
 		genfile(targetfilename, ffile, dstfiledir)
