@@ -2,7 +2,7 @@
 # coding: utf-8
 #
 #
-"""Naval Fate.
+"""Batch Opener.
 Usage:
   batch_open.py <prog_name> <fuzz_folder> [--max_proc=<mp>]
 
@@ -15,8 +15,7 @@ from docopt import docopt
 import sys, time
 from libcall import call
 
-__author__ = 'Francisco Ribeiro <francisco@ironik.org>'
-__copyright__ = 'Copyright (c) 2009-2010 Joe Author'
+__author__ = 'Francisco Ribeiro <blackthorne@ironik.org>'
 __license__ = 'New-style BSD'
 __vcs_id__ = '$Id$'
 __version__ = '0.1'
