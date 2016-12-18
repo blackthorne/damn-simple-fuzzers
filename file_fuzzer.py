@@ -19,7 +19,7 @@ def genrandom(size, forbiddenchars):
 def genfile(filename, data, target_folder):
 	if not os.path.exists(target_folder):
 		os.makedirs(target_folder)
-	tfile=open(target_folder+'/'+filename, 'w')
+	tfile=open(os.getcwd()+'/'+target_folder+'/'+filename, 'w')
 	tfile.write(data)
 	tfile.close()
 
